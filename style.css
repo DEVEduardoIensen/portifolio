@@ -163,3 +163,19 @@ nav button i {
     border: transparent;
 }
 
+.hero .left-section .bottom p{
+    font-size: 14px;
+    color: #606060;
+    margin-bottom: 10px;
+}
+
+.hero .left-section .bottom .icons{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    width: fit-content;
+}
+
