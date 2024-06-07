@@ -18,6 +18,10 @@ button {
 img {
     object-fit: cover;
 }
+.git-img{
+    height: 20px;
+    
+}
 
 h2 {
     font-weight: 400;
