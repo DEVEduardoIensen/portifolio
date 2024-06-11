@@ -1,34 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-:root{
-    --background-color: #fff;
-}
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
 
-a {
+a{
     text-decoration: none;
 }
 
-button {
+button{
     cursor: pointer;
 }
 
-img {
+img{
     object-fit: cover;
 }
 
-
-h2 {
+h2{
     font-weight: 400;
 }
 
-nav {
+nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -42,39 +37,38 @@ nav {
     padding: 12px;
 }
 
-nav .logo {
+nav .logo{
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-nav .logo img {
-    width: 50px;
-    height: 50px;
-    
+nav .logo img{
+    width: 30px;
+    height: 30px;
 }
 
-nav .logo a {
+nav .logo a{
     color: #000;
     font-weight: 600;
 }
 
-nav .nav-links {
+nav .nav-links{
     display: flex;
     gap: 24px;
 }
 
-nav .nav-links a {
+nav .nav-links a{
     font-size: 14px;
     color: #606060;
     transition: all 0.3s ease;
 }
 
-nav .nav-links a:hover {
+nav .nav-links a:hover{
     color: #000;
 }
 
-nav button {
+nav button{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,20 +77,21 @@ nav button {
     height: 32px;
     width: 122px;
     background: #000;
-    color: var(--background-color);
+    color: #fff;
     border-radius: 8px;
     border: 1px solid transparent;
     transition: all 0.3s ease;
 }
 
 nav button:hover,
-.hero .left-section .top .buttons button.doc:hover {
+.hero .left-section .top .buttons button.doc:hover,
+.contact .items .item button:hover{
     color: #000;
-    background: var(--background-color);
+    background: #fff;
     border-color: #dedede;
 }
 
-nav button i {
+nav button i{
     font-size: 20px;
 }
 
@@ -110,7 +105,7 @@ nav button i {
     gap: 30px;
 }
 
-.hero > img {
+.hero > img{
     max-width: 520px;
     width: 44%;
     border-radius: 26px;
@@ -132,7 +127,6 @@ nav button i {
     font-size: 18px;
     margin-bottom: 24px;
     text-align: justify;
-
 }
 
 .hero .left-section .top .buttons{
@@ -140,11 +134,13 @@ nav button i {
     gap: 8px;
 }
 
-.hero .left-section .top .buttons button,.projects .inner > button{
+.hero .left-section .top .buttons button,
+.projects .inner > button,
+.contact .items .item button{
     font-size: 16px;
     border: none;
     padding: 5px 20px;
-    background: var(--background-color);
+    background: #fff;
     border: 1px solid #dedede;
     border-radius: 12px;
     display: flex;
@@ -159,14 +155,16 @@ nav button i {
     font-size: 26px;
 }
 
-.hero .left-section .top .buttons button.doc{
+.hero .left-section .top .buttons button.doc,
+.contact .items .item button{
     background: #000;
-    color: var(--background-color);
+    color: #fff;
 }
-.hero .left-section .top .buttons button.zap:hover{
+
+.hero .left-section .top .buttons button.git:hover{
     background: #000;
-    color: var(--background-color);
-    border: transparent;
+    color: #fff;
+    border-color: transparent;
 }
 
 .hero .left-section .bottom p{
@@ -230,7 +228,6 @@ nav button i {
     border-radius: 16px;
     border: 1px solid #e8e8e8;
     min-height: 365px;
-    height: 100%;
 }
 
 .about .items .item .inner img{
@@ -242,7 +239,7 @@ nav button i {
 .about .items .item .inner a{
     font-size: 18px;
     color: #000;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     display: block;
 }
 
@@ -297,7 +294,6 @@ nav button i {
 .projects .inner .items{
     display: flex;
     gap: 20px;
-
 }
 
 .projects .inner .items .item{
@@ -313,7 +309,7 @@ nav button i {
     font-size: 38px;
     border: 1px solid #606060;
     border-radius: 10px;
-    padding: 10 px;
+    padding: 10px;
     background: #303030;
 }
 
@@ -329,3 +325,261 @@ nav button i {
     font-size: 16px;
     line-height: 24px;
 }
+
+.contact{
+    padding: 100px 60px;
+    background: #f5f5f5;
+}
+
+.contact > h2{
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.contact .items{
+    display: flex;
+    background: #fff;
+    border-radius: 12px;
+}
+
+.contact .items .item{
+    width: 50%;
+    padding: 30px;
+    border: 1px solid #dedede;
+}
+
+.contact .items .item:nth-child(1){
+    border-radius: 12px 0 0 12px;
+}
+
+.contact .items .item:nth-child(2){
+    border-radius: 0 12px 12px 0;
+}
+
+.contact .items .item a{
+    font-size: 24px;
+    color: #000;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.contact .items .item p{
+    font-size: 20px;
+    color: #606060;
+    margin-bottom: 26px;
+}
+
+.contact .items .item button{
+    padding: 10px 24px;
+}
+
+footer{
+    background: #1f1f1f;
+    border-radius: 24px 24px 0 0;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer p,
+footer a{
+    font-size: 13px;
+    color: #606060;
+    transition: all 0.3s ease;
+}
+
+footer a:hover{
+    color: #fff;
+}
+
+@media screen and (max-width: 1280px) {
+    
+    .hero .left-section .top h2{
+        font-size: 25px;
+    }
+
+    .hero .left-section .top p{
+        font-size: 14px;
+    }
+
+    .hero .left-section .top .buttons button,
+    .projects .inner > button,
+    .contact .items .item button{
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+
+    .hero .left-section .top .buttons button i{
+        font-size: 18px;
+    }
+
+    .about .items .item .inner{
+        min-height: 340px;
+    }
+
+    .about .items .item .inner a,
+    .projects .inner > p.info,
+    .contact .items .item p{
+        font-size: 15px;
+    }
+
+    .about .items .item .inner p{
+        font-size: 13px;
+    }
+
+    .projects .inner .items{
+        flex-wrap: wrap;
+    }
+
+    .projects .inner .items .item{
+        width: 46%;
+        height: 220px;
+    }
+
+    .contact .items .item a{
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    
+    .hero{
+        margin-top: 100px;
+        flex-direction: column;
+        justify-content: center;
+        height: calc(100vh - 100px);
+    }
+
+    .hero .left-section{
+        gap: 20px;
+        align-items: center;
+    }
+
+    .hero .left-section .top{
+        text-align: center;
+    }
+
+    .hero .left-section .top .buttons{
+        justify-content: center;
+    }
+
+    .about .items{
+        flex-wrap: wrap;
+    }
+
+    .about .items .item{
+        width: 40%;
+    }
+
+    .projects .inner .items .item{
+        height: 250px;
+    }
+
+    .contact .items .item button{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    nav,
+    nav .nav-links{
+        gap: 16px;
+    }
+
+    nav button{
+        display: none;
+    }
+
+    .hero{
+        padding: 0 40px;
+    }
+
+    .hero > img{
+        width: 55%;
+    }
+
+    .about > h2{
+        font-size: 18px;
+    }
+
+    .about .items .item{
+        width: 100%;
+    }
+
+    .about .items .item .inner img{
+        height: 65%;
+        max-height: 250px;
+    }
+
+    .projects .inner{
+        padding: 50px 40px;
+    }
+
+    .projects .inner > h2{
+        font-size: 24px;
+    }
+
+    .projects .inner p.info{
+        font-size: 13px;
+    }
+
+    .projects .inner button{
+        width: 100%;
+    }
+
+    .projects .inner .items .item{
+        width: 100%;
+        height: 170px;
+    }
+
+    .projects .inner .items .item i{
+        font-size: 28px;
+    }
+
+    .projects .inner .items .item a{
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
+    .projects .inner .items .item p{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .contact{
+        padding: 100px 40px;
+    }
+
+    .contact > h2{
+        font-size: 22px;
+    }
+
+    .contact .items{
+        flex-wrap: wrap;
+    }
+
+    .contact .items .item{
+        width: 100%;
+    }
+
+    .contact .items .item:nth-child(1){
+        border-radius: 12px 12px 0 0;
+    }
+
+    .contact .items .item:nth-child(2){
+        border-radius: 0 0 12px 12px;
+    }
+
+    footer a,
+    footer p{
+        font-size: 11px;
+    }
+
+}
+
