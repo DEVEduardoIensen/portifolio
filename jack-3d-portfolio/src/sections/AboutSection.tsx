@@ -56,7 +56,7 @@ export const AboutSection: React.FC = () => {
 
         <div className="flex flex-col items-center mt-10 sm:mt-14 md:mt-16">
           <AnimatedText 
-            text="Sou Eduardo Iensen Prestes, acadêmico de Ciência da Computação apaixonado por tecnologia, programação e inovação. Focado no desenvolvimento de aplicações web modernas, busco unir a teoria acadêmica com práticas de mercado para criar experiências de usuário fluidas e interfaces de alto impacto. Adoro explorar novos desafios e transformar ideias em soluções reais!"
+            text="Sou Eduardo Iensen Prestes, acadêmico de Engenharia de Software apaixonado por tecnologia, programação e inovação. Focado no desenvolvimento de aplicações web modernas, busco unir a teoria acadêmica com práticas de mercado para criar experiências de usuário fluidas e interfaces de alto impacto. Adoro explorar novos desafios e transformar ideias em soluções reais!"
             className="text-[#D7E2EA] font-medium text-center leading-relaxed max-w-[700px]"
             // We use inline style for font-size clamp to override Tailwind properly
           />

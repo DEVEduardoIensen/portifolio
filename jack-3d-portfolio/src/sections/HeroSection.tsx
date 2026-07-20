@@ -20,10 +20,10 @@ export const HeroSection: React.FC = () => {
       </FadeIn>
 
       {/* Hero Heading */}
-      <div className="overflow-hidden w-full z-0 relative mt-6 sm:mt-4 md:-mt-5">
+      <div className="w-full z-0 relative mt-6 sm:mt-4 md:-mt-5 px-4">
         <FadeIn delay={0.15} y={40} className="w-full text-center flex justify-center">
-          <h1 className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-[12vw] sm:text-[13vw] md:text-[14vw] lg:text-[15vw]">
-            oi, sou eduardo iensen prestes
+          <h1 className="hero-heading font-black uppercase tracking-tight leading-none w-full text-[12vw] sm:text-[13vw] md:text-[14vw] lg:text-[15vw]">
+            oi, sou eduardo
           </h1>
         </FadeIn>
       </div>

@@ -14,29 +14,34 @@ export const AnimatedText: React.FC<AnimatedTextProps> = ({ text, className = ''
     offset: ['start 0.8', 'end 0.2']
   });
 
-  const characters = text.split('');
-  const totalChars = characters.length;
+  const words = text.split(' ');
+  const totalChars = text.length;
+  let charIndex = 0;
 
   return (
-    <p ref={containerRef} className={`relative flex flex-wrap justify-center ${className}`}>
-      {characters.map((char, i) => {
-        const start = i / totalChars;
-        const end = start + (1 / totalChars);
-        
-        // Transform opacity based on scroll position mapping to character index
-        const opacity = useTransform(scrollYProgress, [start, end], [0.2, 1]);
-        
+    <p ref={containerRef} className={`relative flex flex-wrap justify-center gap-x-[0.25em] gap-y-[0.1em] ${className}`}>
+      {words.map((word, wordIdx) => {
         return (
-          <span key={i} className="relative inline-block whitespace-pre">
-            {/* Invisible placeholder to maintain natural layout/wrapping */}
-            <span className="opacity-0">{char}</span>
-            {/* Animated absolute character */}
-            <motion.span 
-              className="absolute left-0 top-0"
-              style={{ opacity }}
-            >
-              {char}
-            </motion.span>
+          <span key={wordIdx} className="inline-block whitespace-nowrap">
+            {word.split('').map((char, i) => {
+              const currentIdx = charIndex++;
+              const start = currentIdx / totalChars;
+              const end = start + (1 / totalChars);
+              
+              const opacity = useTransform(scrollYProgress, [start, end], [0.2, 1]);
+              
+              return (
+                <span key={i} className="relative inline-block">
+                  <span className="opacity-0">{char}</span>
+                  <motion.span 
+                    className="absolute left-0 top-0"
+                    style={{ opacity }}
+                  >
+                    {char}
+                  </motion.span>
+                </span>
+              );
+            })}
           </span>
         );
       })}

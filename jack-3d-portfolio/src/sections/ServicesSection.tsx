@@ -4,28 +4,28 @@ import { FadeIn } from '../components/FadeIn';
 const services = [
   {
     num: "01",
-    name: "Modelagem 3D",
-    desc: "Criação de objetos detalhados, personagens ou ambientes adaptados às necessidades específicas do cliente, ideal para jogos, produtos e visualizações."
+    name: "Landing Pages",
+    desc: "Criação de páginas otimizadas para conversão, com design moderno e foco em resultados rápidos para campanhas."
   },
   {
     num: "02",
-    name: "Renderização",
-    desc: "Renders fotorrealistas de alta qualidade que mostram designs com iluminação, texturas e materiais personalizados para dar vida aos conceitos."
+    name: "Sites Institucionais",
+    desc: "Desenvolvimento de sites profissionais para empresas, garantindo presença digital forte, performance e acessibilidade."
   },
   {
     num: "03",
-    name: "Motion Design",
-    desc: "Animações dinâmicas e motion graphics que adicionam energia e narrativa a marcas, produtos e experiências digitais."
+    name: "Desenvolvimento Front-end",
+    desc: "Implementação de interfaces interativas e responsivas utilizando as tecnologias mais modernas do mercado (React, Vue, Tailwind)."
   },
   {
     num: "04",
-    name: "Branding",
-    desc: "Criação de identidades visuais coesas - de logotipos a sistemas de marca completos - que comunicam uma presença clara e memorável."
+    name: "Sistemas Web",
+    desc: "Criação de aplicações web robustas e escaláveis, focadas na experiência do usuário e alta performance."
   },
   {
     num: "05",
-    name: "Web Design",
-    desc: "Design de sites limpos, modernos e focados em conversão, com atenção ao layout, tipografia e experiência do usuário."
+    name: "UI/UX Design",
+    desc: "Foco na usabilidade e no visual atraente para garantir que a navegação do usuário seja intuitiva e marcante."
   }
 ];
 
