@@ -9,21 +9,21 @@ const projects = [
     name: "Eldorado Lake",
     category: "Web App",
     url: "https://deveduardoiensen.github.io/eldorado-lake/",
-    image: "/eldorado.png"
+    image: "eldorado.png"
   },
   {
     num: "02",
     name: "TR Fishing",
     category: "Landing Page",
     url: "https://deveduardoiensen.github.io/tr-fishing/",
-    image: "/trfishing.png"
+    image: "trfishing.png"
   },
   {
     num: "03",
     name: "IronRiders",
     category: "Vue.js App",
     url: "https://wesleysantosx.github.io/IronRiders-VueJs/",
-    image: "/ironriders.png"
+    image: "ironriders.png"
   }
 ];
 
@@ -97,7 +97,7 @@ const ProjectCard = ({ project, index, totalCards }: { project: any, index: numb
         <div className="flex-1 w-full h-full relative overflow-hidden rounded-[40px] sm:rounded-[50px] md:rounded-[60px]">
           <motion.img 
             style={{ scale: imageScale }}
-            src={project.image} 
+            src={`${import.meta.env.BASE_URL}${project.image}`} 
             alt={project.name} 
             className="w-full h-full object-cover object-top origin-center" 
           />

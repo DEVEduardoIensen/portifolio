@@ -33,7 +33,7 @@ export const HeroSection: React.FC = () => {
         <FadeIn delay={0.6} y={30}>
           <Magnet padding={150} strength={3} className="pointer-events-auto">
             <img
-              src="/avatar.png"
+              src={`${import.meta.env.BASE_URL}avatar.png`}
               alt="Eduardo Portrait"
               className="w-[280px] sm:w-[360px] md:w-[440px] lg:w-[520px] object-contain drop-shadow-[0_0_25px_rgba(255,255,255,0.1)]"
             />
